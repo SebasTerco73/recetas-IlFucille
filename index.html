@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas Restaurante Il Fucille</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="icon/ico" href="img/favico.ico">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="caja">
+            <h1 class="encabezado"><a href="index.html"> <img class="logo" src="img/ilfucille.png" alt="Logo"></a></h1>
+
+            <!-- etiqueta para menus, enlaces de navegacion -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="reservas.html">Reservas</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <h1 class="titulo">Recetas de cocina:</h1>
+
+    <aside>
+        <div class="aside">
+            <ul>
+                <li class="categorias">Pizas:</li>
+                <ul>
+                    <li>Pizza fiesta italiana</li>
+                    <li  onclick="cargarReceta('carbonara')"><a href="#receta">Pizza carbonara (completa)</a></li>
+                    <li>Focaccia italiana básica</li>
+                </ul>
+                <li class="categorias">Pastas:</li>
+                <ul>
+                    <li onclick="cargarReceta('lasaña')"><a href="#receta">Lasaña de carne a la boloñesa (completa)</a></li>
+                    <li>Espaguetis a la carbonara</li>
+                    <li>Tagliatelle boloñesa</li>
+                </ul>
+                <li class="categorias">Carnes:</li>
+                <ul>
+                    <li onclick="cargarReceta('pollo')"><a href="#receta">Pollo all cacciatora (completo)</a></li>
+                    <li>Conejo estofado al estilo de Isquia</li>
+                    <li>Piccata al limone con basilico</li>
+                </ul>
+                <li class="categorias">Postres:</li>
+                <ul>
+                    <li>Torta caprese</li>
+                    <li>Torta tenerina</li>
+                    <li onclick="cargarReceta('tiramisu')"><a href="#receta">Tiramisú (completo)</a></li>
+                </ul>
+            </ul>
+        </div>
+    </aside>
+
+    <main class="contenido">
+        <div id="receta">
+            <img src="/recetas/img/menu.png" alt="imagen">
+        </div>
+    </main>
+    <footer>
+        <div class="pie">
+            <h1 class="encabezado"><a href="index.html"> <img class="logo" src="img/ilfucille.png" alt="Logo"></a></h1>
+            <p>© Copyright Restaurante Il Fucille - 2024</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

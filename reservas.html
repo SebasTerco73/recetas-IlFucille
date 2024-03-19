@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap" rel="stylesheet">
+    <title>Reservas Restaurante Il Fucille</title>
+</head>
+
+<body>
+    <header>
+        <div class="caja">
+            <h1 class="encabezado"><a href="index.html"> <img class="logo" src="img/ilfucille.png" alt="Logo"></a></h1>
+
+            <!-- etiqueta para menus, enlaces de navegacion -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="reservas.html">Reservas</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- formulario -->
+        <form>
+            <label for="nombreapellido">Nombre y apellido :</label>
+            <input type="text" id="nombreapellido" class="input-padron" required>
+
+            <!-- required: este campo es obligatorio -->
+            <label for="correoelectronico">Correo electrónico :</label>
+            <input type="email" id="correoelectronico" class="input-padron" placeholder="email@dominio.com" required>
+
+            <label for="telefono">Teléfono :</label>
+            <input type="tel" id="telefono" class="input-padron" placeholder="(XX) XXXX XXXX" required>
+
+            <!-- textarea, area de texto de tamaño editable, solo tiene en cuenta las filas, 
+            las columnas estan configuradas en el css-->
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" cols="111110" rows="7" class="input-padron" required></textarea>
+
+            <!-- Funciona como un div, pero se usa cuando hay distintos items relacionados al mismo tema -->
+            <fieldset>
+                <!-- en los fieldset, en lugar de usar <p> para el titulo/pregunta se usa LEGEND-->
+                <legend>¿Cómo le gustaría que lo contactemos?</legend>
+                <!-- Radio, circulo para seleccionar opciones, name para que solo se pueda seleccionar 1 opcion -->
+                <label for="radio-email"> <input type="radio" name="contacto" value="email"
+                        id="radio-email">Email</label>
+
+                <label for="radio-telefono"><input type="radio" name="contacto" value="telefono"
+                        id="radio-telefono">Teléfono</label>
+
+                <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp"
+                        checked>WhatsApp</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>¿En que fecha desea reservar?</legend>
+                <input type="date" id="fecha" name="fecha">
+            </fieldset>
+            <fieldset>
+                <legend>¿En que turno desea ser atendido?</legend>
+                <!-- Lista de opciones -->
+                <select id="turno">
+                    <option>Almuerzo</option>
+                    <option>Cena</option>
+                </select>
+            </fieldset>
+
+            <!-- input dentro del label, para ahorrar de poner una ID -->
+            <label><input type="checkbox" class="checkbox" checked>¿Le gustaría recibir novedades de Il Fucille
+                resto?</label>
+
+            <!-- boton de enviar -->
+            <input type="submit" value="Enviar reserva" class="enviar">
+        </form>
+
+        <table>
+            <!-- TR= table row, cada fila lleva un tr -->
+            <!-- TD= table data cell, cada celda dentro de la fila lleva un td -->
+            <!-- thead= Table head, para los encabezados -->
+            <thead>
+                <tr>
+                    <!-- Los titulos no usan TD, en su lugar usan TH -->
+                    <th rowspan="2">Día</th>
+                    <th colspan="2">Horario</th>
+                </tr>
+
+                <tr>
+                    <th>Almuerzo</th>
+                    <th>Cena</th>
+
+                </tr>
+            </thead>
+
+            <!-- TBODY= Table body - cuerpo de la tabla -->
+            <tbody>
+                <tr>
+                    <td>Lunes</td>
+                    <td colspan="2">Cerrado</td>
+                </tr>
+
+                <tr>
+                    <td>Martes/Viernes</td>
+                    <td>Cerrado</td>
+                    <td>19h ~ 24h</td>
+                </tr>
+
+                <tr>
+                    <td>Sabado</td>
+                    <td>11h ~ 15hs</td>
+                    <td>19h ~ 24h</td>
+                </tr>
+
+                <tr>
+                    <td>Domingo</td>
+                    <td>11h ~ 15hs</td>
+                    <td>19h ~ 24h</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+
+    <footer>
+        <div class="pie">
+            <h1 class="encabezado"><a href="index.html"> <img class="logo" src="img/ilfucille.png" alt="Logo"></a></h1>
+            <p>© Copyright Restaurante Il Fucille - 2024</p>
+        </div>
+    </footer>
+</body>
+
+</html>

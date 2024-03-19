@@ -1,0 +1,265 @@
+body {
+    font-size: 1.2em;
+    background: url(/recetas/img/fondoS.jpg);
+    background-size: cover;
+    font-family: "Crimson Text", serif;
+}
+
+
+header,
+footer {
+    /* background: thistle; */
+    padding: 10px 0;
+    background: linear-gradient(#f79f84, #4f0d0dad);
+}
+
+.logo {
+    width: 180px;
+    height: auto;
+    display: inline;
+}
+
+nav li {
+    display: inline;
+    /* margen externo  */
+    margin: 0 0 0 15px;
+}
+
+/* "." para clases  */
+.caja {
+    width: 900px;
+    /* permite mover el elemento desde su posicion natural */
+    position: relative;
+    margin: 0 auto;
+}
+
+nav {
+    /* permite mover el elemento desde la posicion 0 (cero) */
+    position: absolute;
+    top: 50%;
+    right: 0px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 700;
+    font-size: 22px;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+/* hover:movimiento del mouse */
+nav a:hover {
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+.titulo {
+    font-weight: 700;
+    text-align: center;
+    text-decoration: underline;
+    margin: 20px;
+    font-size: 2em;
+}
+
+aside {
+    display: inline;
+}
+
+.aside {
+    /* background-color: #c78c19; */
+    display: inline-block;
+    /* width: 30%; */
+    border: 2px solid #000;
+    margin: 30px;
+    border-radius: 10px 40px;
+}
+
+.categorias {
+    font-weight: 700;
+    list-style: circle;
+    margin: 20px 0 5px 20px;
+    text-decoration: underline;
+}
+
+ul ul {
+    margin: 10px 30px 10px 50px;
+    list-style: inside;
+    cursor: pointer;
+}
+
+ul ul li:hover {
+    color: #0000FF;
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+li {
+    margin-top: 5px;
+}
+
+/* cuando le agrege el ancla, me lo cambio de color a violeta, como un link seleccionado */
+li a {
+    color: black; /* Cambiar el color del texto a negro (o tu color deseado) */
+    text-decoration: none; /* Eliminar cualquier subrayado del enlace */
+}
+
+#receta {
+    /* background: tomato; */
+    height: auto;
+    padding: 50px;
+    text-align: center;
+}
+
+#receta::first-line {
+    font-size: 1.5em;
+    font-weight: 700;
+    text-decoration: underline;
+    color: #4f000e;
+}
+
+.contenido {
+    width: 50%;
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    height: auto;
+    left: 5%;
+    top: -50px;
+    /* background: #0000FF; */
+}
+
+.pie {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*///////////////////// CONTACTO //////////////////////////////////////////////// */
+
+/*///////////////////// CONTACTO //////////////////////////////////////////////// */
+
+form {
+    margin: 40px;
+}
+
+#mensaje {
+    resize: none;
+}
+
+/* display block para que ocupen todo el ancho de la pagina, por defecto vienen como inline */
+/* combinar estilos para varios selectores, separados por la coma "," */
+form label,
+form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+label,
+fieldset {
+    margin-bottom: 10px;
+}
+
+#fecha {
+    margin-bottom: 20px;
+}
+
+.input-padron {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 25px 5px 20px;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    background: orange;
+    border: none;
+    /* puntas redondeadas */
+    border-radius: 5px;
+    /* tiempo de transicion al cambiar el background  
+    transition: 1s background;*/
+    transition: 1s all;
+    /* cursor de manito para los botones */
+    cursor: pointer;
+}
+
+/* evento de pasar el mouse */
+.enviar:hover {
+    background: darkorange;
+    /* aumenta la escala 1,2% */
+    transform: scale(1.2);
+}
+
+table {
+    margin: 40px 40px;
+}
+
+thead {
+    background: #555;
+    color: white;
+    font-weight: 700;
+}
+
+th,
+td {
+    border: 1px solid #000;
+    padding: 8px 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+/*///////////////////// NOSOTROS //////////////////////////////////////////////// */
+
+/*///////////////////// NOSOTROS //////////////////////////////////////////////// */
+
+.video {
+    margin: 10px 0 0;
+    text-align: center;
+}
+
+.descripcion {
+    font-size: 20px;
+    margin: 30px 30px 0;
+    width: 90%;
+}
+
+.titulo-descripcion {
+    font-weight: 700;
+    text-align: center;
+    text-decoration: underline;
+    margin: 20px;
+    font-size: 2.2em;
+    color: #671014;
+    text-shadow: 14px 14px 15px #000000;
+}
+
+.texto-descripcion::first-letter {
+    font-weight: bold;
+    font-size: 2em;
+    /* Tamaño de la letra inicial */
+    line-height: 1em;
+    /* Altura de línea */
+    float: left;
+    /* Hacemos que la letra inicial flote a la izquierda */
+    margin-right: 5px;
+    /* Espacio a la derecha para separarla del texto */
+}
+
+
+.resto {
+    margin: 20px 0;
+    width: 100%;
+    -webkit-box-shadow: 32px 32px 87px 52px rgba(0, 0, 0, 0.56);
+    box-shadow: 32px 32px 87px 52px rgba(0, 0, 0, 0.56);
+}
